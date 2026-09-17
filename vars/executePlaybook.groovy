@@ -1,3 +1,3 @@
 def call(String path) {
-    sh "ansible-playbook -i ${path}/inventory/hosts.ini site.yml"
+    sh "ansible-playbook -i ${path}/inventory/hosts.ini ${path}/site.yml"
 }
